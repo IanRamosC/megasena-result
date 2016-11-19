@@ -7,7 +7,7 @@ var num
 
 program
   .version(require('../package.json').version)
-  .option('-n, --numbers', 'Total of numbers to generate')
+  .option('-n, --numbers <numbers>', 'Total of numbers to generate')
   .parse(process.argv)
 
 num = (program.numbers && !isNaN(program.numbers)) ? Number(program.numbers) : 6;
