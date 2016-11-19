@@ -1,6 +1,6 @@
 {
   "name": "megasena-result",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A module to generate random number to help you win the lottery.",
   "main": "./megasena.js",
   "preferGlobal": true,
