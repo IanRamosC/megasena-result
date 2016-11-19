@@ -1,10 +1,12 @@
 {
-  "name": "megasena.js",
+  "name": "megasena-result",
   "version": "0.0.1",
-  "description": "A tiny module to generate random number to help you win the lottery.",
+  "description": "A module to generate random number to help you win the lottery.",
   "main": "megasena.js",
   "preferGlobal": true,
-  "bin": "./bin/megasena",
+  "bin": {
+    "megasena-result": "./bin/megasena"
+  },
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers js:babel-core/register --reporter spec",
     "compile": "./node_modules/.bin/babel src/megasena.js --out-file ./megasena.js",
