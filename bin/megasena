@@ -2,14 +2,9 @@
 'use strict';
 
 var num
-  , program = require('commander')
   , megasena = require('../megasena.js')
 
-program
-  .version(require('../package.json').version)
-  .option('-n, --numbers <numbers>', 'Total of numbers to generate')
-  .parse(process.argv)
 
-num = (program.numbers && !isNaN(program.numbers)) ? Number(program.numbers) : 6;
+num = (process.argv[2] && !isNaN(process.argv[2])) ? Number(process.argv[2]) : 6;
 console.log(megasena(num, true))
 

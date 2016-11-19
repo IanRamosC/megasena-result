@@ -1,6 +1,6 @@
 {
   "name": "megasena-result",
-  "version": "0.0.5",
+  "version": "0.0.1",
   "description": "A module to generate random number to help you win the lottery.",
   "main": "./megasena.js",
   "preferGlobal": true,
@@ -26,8 +26,5 @@
     "babel-preset-es2015": "^6.18.0",
     "chai": "^3.5.0",
     "mocha": "^3.1.2"
-  },
-  "dependencies": {
-    "commander": "^2.9.0"
   }
 }
