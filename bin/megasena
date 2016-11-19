@@ -6,7 +6,7 @@ var num
   , megasena = require('../megasena.js')
 
 program
-  .version(require('./package.json').version)
+  .version(require('../package.json').version)
   .option('-n, --numbers', 'Total of numbers to generate')
   .parse(process.argv)
 
