@@ -1,0 +1,23 @@
+{
+  "name": "megasena.js",
+  "version": "0.0.1",
+  "description": "A tiny module to generate random number to help you win the lottery.",
+  "main": "megasena.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register --reporter spec"
+  },
+  "keywords": [
+    "megasena",
+    "lottery",
+    "random",
+    "numbers"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
