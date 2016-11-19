@@ -3,6 +3,10 @@ let generateRandom = _ => {
 }
 
 let generateMegaSenaResult = (num = 6, returnAsString = false) => {
+  if (isNaN(num)) {
+    throw new TypeError('The specified argument is not a number');
+  }
+
   let result = []
   
   while (result.length < num) {
