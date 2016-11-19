@@ -17,7 +17,7 @@ $ npm install megasena-result
 ```sh
 $ megasena-result
 $ // 01, 05, 19, 30, 48, 57
-$ megasena-result -n 9
+$ megasena-result 9
 $ // 01, 05, 11, 19, 23, 30, 36, 48, 57
 ```
 
