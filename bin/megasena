@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+'use strict';
+
+var num
+  , program = require('commander')
+  , megasena = require('./megasena.js')
+
+program
+  .version(require(./package.json).version)
+  .option('-n, --numbers', 'Total of numbers to generate')
+  .parse(process.argv)
+
+num = (process.numbers && !isNaN(process.numbers)) ? Number(process.numbers) : 6;
+
+megasena(num, true)

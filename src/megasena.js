@@ -2,7 +2,7 @@ let generateRandom = _ => {
   return (~~(Math.random() * 60)) + 1
 }
 
-let generateMegaSenaResult = (num = 6) => {
+let generateMegaSenaResult = (num = 6, returnAsString = false) => {
   let result = []
   
   while (result.length < num) {
@@ -13,9 +13,11 @@ let generateMegaSenaResult = (num = 6) => {
     }
   }
 
-  return result.sort((a, b) => {
+  result.sort((a, b) => {
     return a - b
-  }).join(', ')
+  })
+
+  return (returnAsString) ? result.join(', ') : result
 }
 
 module.exports = generateMegaSenaResult;
