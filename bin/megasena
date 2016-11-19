@@ -10,6 +10,6 @@ program
   .option('-n, --numbers', 'Total of numbers to generate')
   .parse(process.argv)
 
-num = (process.numbers && !isNaN(process.numbers)) ? Number(process.numbers) : 6;
+num = (program.numbers && !isNaN(program.numbers)) ? Number(program.numbers) : 6;
+console.log(megasena(num, true))
 
-megasena(num, true)
