@@ -3,7 +3,7 @@
 
 var num
   , program = require('commander')
-  , megasena = require('./megasena.js')
+  , megasena = require('../megasena.js')
 
 program
   .version(require('./package.json').version)
