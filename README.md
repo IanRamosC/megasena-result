@@ -1,7 +1,7 @@
 megasena-result
 =====
 
-A module to generate lottery to help you win the lottery.
+A module to generate lottery numbers to help you win the lottery.
 
 
 [![Build Status](https://travis-ci.org/IanRamosC/megasena-result.svg?branch=master)](https://travis-ci.org/IanRamosC/megasena-result)
