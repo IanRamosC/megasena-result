@@ -4,10 +4,6 @@ var generateRandom = function generateRandom(_) {
   return ~~(Math.random() * 60) + 1;
 };
 
-var pad = function pad(num) {
-  return num < 10 ? Number('0' + num) : num;
-};
-
 var generateMegaSenaResult = function generateMegaSenaResult() {
   var num = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 6;
   var returnAsString = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
@@ -16,10 +12,11 @@ var generateMegaSenaResult = function generateMegaSenaResult() {
     throw new TypeError('The specified argument is not a number');
   }
 
-  var result = [];
+  var result = [],
+      _num = Math.min(num, 60);
 
-  while (result.length < num) {
-    var number = pad(generateRandom());
+  while (result.length < _num) {
+    var number = generateRandom();
 
     if (result.indexOf(number) < 0) {
       result.push(number);
